@@ -9,4 +9,11 @@ public interface TeacherService {
      * @return
      */
     public String getTeacherNum();
+
+    /**
+     * 获取教师信息
+     * @param name
+     * @return
+     */
+    public String getTeacherMsg(String name);
 }

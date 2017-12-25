@@ -11,6 +11,7 @@ public class ProxyUtilsTest {
     public void testProxy(){
         TeacherService teacherService = ProxyUtils.getProxyObj(TeacherService.class,
                 TeacherServiceImpl.class);
-        System.out.println(teacherService.getTeacherNum());
+        String msg = teacherService.getTeacherMsg("美女");
+        System.out.println(msg);
     }
 }
